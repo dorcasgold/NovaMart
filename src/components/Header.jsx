@@ -10,7 +10,7 @@ function Header() {
     setNav(!nav)
   }
   return (
-    <div className='bg-slate-900 text-peach px-5 py-4'>
+    <div className=' text-brown  px-5 border-b-2 border-brown py-4'>
       <div className='md:flex justify-between items-center text-xl md:mx-8 lg:mx-32 my-2 hidden'>
         <div className=" font-bold text-2xl">
           <p>NOVAMART</p>

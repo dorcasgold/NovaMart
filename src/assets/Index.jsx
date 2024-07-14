@@ -9,12 +9,15 @@ import az1 from './az1.jpg';
 import az2 from './az2.jpg';
 import az3 from './az3.jpg';
 import az5 from './az5.jpg';
+import az4 from './az4.jpg';
 
 const data = [
+  { img: az4 },
+  { img: az1 },
   { img: az5 },
   { img: az3 },
   { img: az2 },
-  { img: az1 },
+
 ];
 
 
