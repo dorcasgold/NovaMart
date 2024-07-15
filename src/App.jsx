@@ -2,6 +2,7 @@ import { createBrowserRouter, Outlet, RouterProvider, ScrollRestoration } from '
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import { productsData } from './api/Api';
 
 const Layout = () => {
   return (
@@ -21,7 +22,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home />
+        element: <Home />,
+        loader: productsData,
       }
     ]
   }

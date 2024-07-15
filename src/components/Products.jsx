@@ -2,16 +2,10 @@ import { RiCustomerService2Line } from "react-icons/ri";
 import { TbTruckDelivery } from "react-icons/tb";
 import { FaMoneyCheckDollar } from "react-icons/fa6";
 import { RiSecurePaymentLine } from "react-icons/ri";
-import Api from '../api/Api';
 import ProductList from '../components/ProductList'
-import { useState } from "react";
 
-function Products() {
-  const [products, setProducts] = useState([]);
+function Products({ products }) {
 
-  const handleDataFetch = (fetchedData) => {
-    setProducts(fetchedData);
-  };
   return (
     <div className="my-4 flex flex-col gap-3">
       <div className='lg:flex-row  lg:flex items-baseline ml-10 lg:ml-0 my-5 md:grid md:grid-cols-2 flex justify-center OpenSans lg:gap-14 gap-8 flex-col '>
@@ -53,9 +47,11 @@ function Products() {
         <p className="bg-red h-1 lg:w-[33rem] w-20 md:w-52"></p>
       </div>
 
-      <Api onDataFetch={handleDataFetch} />
-      <div>
-        <ProductList products={products} />
+      <div className="max-w-screen-xl mx-auto py-10 grid grid-cols-4 gap-10">
+        {products.map((item) => (
+          <ProductList key={item._id} product={item} />
+        ))
+        }
       </div>
     </div>
   )
