@@ -10,7 +10,7 @@ function Header() {
     setNav(!nav)
   }
   return (
-    <div className=' text-brown  px-5 border-b-2 border-brown py-4'>
+    <div className=' text-brown  px-5 border-b-2 border-brown py-4 Staat-font'>
       <div className='md:flex justify-between items-center text-xl md:mx-8 lg:mx-32 my-2 hidden'>
         <div className=" font-bold text-2xl">
           <p>NOVAMART</p>
@@ -22,7 +22,7 @@ function Header() {
         <div className="flex gap-8">
           <div className="relative ">
             <MdShoppingCart className="text-3xl" />
-            <span className="absolute -top-2 -right-3 text-sm text-black font-bold text-center bg-peach  px-2 rounded-2xl">4</span>
+            <span className="absolute -top-2 -right-3 text-sm text-black font-semibold text-center bg-green-500  px-2 rounded-2xl">4</span>
           </div>
           <div className="flex gap-2 items-center">
             <FaUserAstronaut />

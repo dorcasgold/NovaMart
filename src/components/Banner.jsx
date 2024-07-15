@@ -10,7 +10,7 @@ function Banner() {
     setCurrentSlide(currentSlide === 3 ? 0 : (prev) => prev + 1)
   }
   return (
-    <div className="w-full h-auto overflow-x-hidden">
+    <div className="w-full lg:h-auto h-[300px] overflow-hidden border-b-2 border-brown">
       <div className='w-screen h-[650px] relative'>
         <div className='lg:w-[400vw] w-full h-full flex transition-transform duration-1000' style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
           <img src={data[0].img} alt="ImgOne" className='lg:w-screen h-1/2 lg:h-full object-cover' loading='priority' />
@@ -18,11 +18,11 @@ function Banner() {
           <img src={data[2].img} alt="ImgThree" className='lg:w-screen h-1/2 lg:h-full object-cover' loading='priority' />
           <img src={data[3].img} alt="ImgFour" className='lg:w-screen h-1/2 lg:h-full object-cover' loading='priority' />
         </div>
-        <div className=' absolute w-fit left-0 right-0 mx-auto flex gap-8 bottom-44'>
-          <div onClick={prevSlide} className='w-14 h-12 border-[1px] border-gray-700 flex items-center rounded-[3rem] justify-center hover:cursor-pointer bg-brown hover:bg-lbrown text-white active:bg-peach duration-300'>
+        <div className=' -translate-y-[13rem] lg:-translate-y-0 absolute w-fit left-0 right-0 mx-auto flex gap-8 bottom-44'>
+          <div onClick={prevSlide} className='w-14 h-12 border-[1px] border-gray-700 flex items-center rounded-[3rem] justify-center hover:cursor-pointer bg-brown hover:bg-lbrown text-white active:bg-red-400 duration-300'>
             <HiArrowLeft />
           </div>
-          <div onClick={nextSlide} className='w-14 h-12 border-[1px] border-gray-700 flex items-center rounded-[3rem] justify-center hover:cursor-pointer bg-brown hover:bg-lbrown text-white active:bg-peach duration-300'>
+          <div onClick={nextSlide} className='w-14 h-12 border-[1px] border-gray-700 flex items-center rounded-[3rem] justify-center hover:cursor-pointer bg-brown hover:bg-lbrown text-white active:bg-red-400 duration-300'>
             <HiArrowRight />
           </div>
         </div>

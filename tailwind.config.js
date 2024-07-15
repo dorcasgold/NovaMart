@@ -9,10 +9,8 @@ export default {
     extend: {
       colors: {
         brown: '#543310',
-        beige: '#F8F4E1',
-        peach: '#F5DAD2',
-        pink: '#FFCBCB',
-        lbrown: '#74512D'
+        lbrown: '#985c1c',
+        red: '#da000b'
       },
     },
   },
