@@ -10,7 +10,7 @@ function Banner() {
     setCurrentSlide(currentSlide === 3 ? 0 : (prev) => prev + 1)
   }
   return (
-    <div className="w-full lg:h-auto h-[300px] overflow-hidden border-b-2 border-brown">
+    <div className="w-full lg:h-auto h-[300px] overflow-hidden lg:border-b-2 border-brown">
       <div className='w-screen h-[650px] relative'>
         <div className='lg:w-[400vw] w-full h-full flex transition-transform duration-1000' style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
           <img src={data[0].img} alt="ImgOne" className='lg:w-screen h-1/2 lg:h-full object-cover' loading='priority' />

@@ -30,7 +30,7 @@ function ProductList({ product }) {
   return (
     <div className="group relative text-center flex flex-col gap-2 ">
       <div className="w-full h-96 cursor-pointer relative overflow-hidden">
-        <img src={imageUrl} className="w-full h-full object-cover group-hover:scale-110 duration-500" alt="productImg" />
+        <img src={imageUrl} className="w-full h-full object-cover group-hover:scale-110 duration-500" alt="productImg" loading='priority' />
         <div className="absolute gap-2 inset-0 flex flex-col items-center justify-center bg-slate-700 bg-opacity-75 transform translate-x-full group-hover:translate-x-0 transition-transform duration-500">
           <p onClick={() => toast.success(`${product.title} is added`)} className="px-3 font-semibold hover:transition-transform duration-500 py-2 bg-red text-white rounded mb-2 hover:bg-black">Add To Cart</p>
           <p className="px-3 font-semibold hover:transition-transform duration-500 py-2 bg-green-500 text-white rounded hover:bg-black">View Detail</p>

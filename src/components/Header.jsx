@@ -37,7 +37,7 @@ function Header() {
         </div>
       </div>
 
-      <div className={nav ? 'md:hidden fixed w-full mt-16 left-0 top-0 py-5 bg-lbrown ease-in-out duration-500' : "fixed top-[-100%]"}>
+      <div className={nav ? 'md:hidden fixed w-full mt-16 left-0 top-0 py-5 bg-red text-white ease-in-out duration-500' : "fixed top-[-100%]"}>
         <div className='flex justify-center gap-12 items-center text-base my-2'>
           <div className="flex gap-2">
             <p className=" cursor-pointer">HOME</p>

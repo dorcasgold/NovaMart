@@ -8,7 +8,7 @@ function Products({ products }) {
 
   return (
     <div className="my-4 flex flex-col gap-3">
-      <div className='lg:flex-row  lg:flex items-baseline ml-10 lg:ml-0 my-5 md:grid md:grid-cols-2 flex justify-center OpenSans lg:gap-14 gap-8 flex-col '>
+      <div className='lg:flex-row hidden lg:flex items-baseline ml-10 lg:ml-0 my-5 md:grid md:grid-cols-2 justify-center lg:gap-14 gap-8'>
         <div className="flex items-center gap-3 text-brown">
           <RiCustomerService2Line className="text-3xl" />
           <div className="text-black flex flex-col gap-1">
@@ -47,7 +47,7 @@ function Products({ products }) {
         <p className="bg-red h-1 lg:w-[33rem] w-20 md:w-52"></p>
       </div>
 
-      <div className="max-w-screen-xl mx-auto py-10 grid grid-cols-4 gap-10">
+      <div className="max-w-screen-xl mx-auto py-10 grid lg:grid-cols-4 grid-cols-1 gap-10">
         {products.map((item) => (
           <ProductList key={item._id} product={item} />
         ))
