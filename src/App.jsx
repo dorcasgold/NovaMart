@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import { productsData } from './api/Api';
+import Product from './components/Product';
 
 const Layout = () => {
   return (
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />,
         loader: productsData,
+      },
+      {
+        path: 'product/:id',
+        element: <Product />
       }
     ]
   }

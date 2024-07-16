@@ -2,6 +2,7 @@ import { MdShoppingCart } from "react-icons/md";
 import { FaUserAstronaut } from "react-icons/fa";
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [nav, setNav] = useState(false)
@@ -13,7 +14,9 @@ function Header() {
     <div className=' text-brown  px-5 border-b-2 border-brown py-4 Staat-font sticky top-0 z-50 bg-white'>
       <div className='md:flex justify-between items-center text-xl md:mx-8 lg:mx-32 my-2 hidden'>
         <div className=" font-bold text-2xl">
-          <p>NOVAMART</p>
+          <Link to='/'>
+            <p>NOVAMART</p>
+          </Link>
         </div>
         <div className="flex gap-10">
           <p className=" cursor-pointer">HOME</p>
@@ -30,10 +33,12 @@ function Header() {
           </div>
         </div>
       </div>
-      <div onClick={handleNav} className='md:hidden flex flex-row-reverse justify-between'>
-        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+      <div className='md:hidden flex flex-row-reverse justify-between'>
+        {nav ? <AiOutlineClose size={20} onClick={handleNav} /> : <AiOutlineMenu size={20} onClick={handleNav} />}
         <div className=" font-bold text-2xl">
-          <p >NOVAMART</p>
+          <Link to='/'>
+            <p>NOVAMART</p>
+          </Link>
         </div>
       </div>
 
