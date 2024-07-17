@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom"
 import { ToastContainer, toast } from 'react-toastify';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../redux/novaSlice';
 
 function Product() {
+  const dispatch = useDispatch()
   const [details, setDetails] = useState({});
   let [baseQty, setBaseQty] = useState(1)
   const location = useLocation();
@@ -71,7 +74,16 @@ function Product() {
               </div>
             </div>
             <button
-              onClick={() => toast.success(`${details.title} is added`)}
+              onClick={() =>
+                dispatch(addToCart({
+                  _id: details.id,
+                  title: details.title,
+                  image: details.imageUrl,
+                  price: details.price,
+                  quantity: 1,
+                  description: details.description
+                })) &
+                toast.success(`${details.title} added to cart`)}
               className="bg-red text-white py-3 px-6 active:bg-gray-800">add to cart
             </button>
           </div>

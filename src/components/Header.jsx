@@ -3,8 +3,11 @@ import { FaUserAstronaut } from "react-icons/fa";
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Header() {
+  // const productData = useSelector((state) => state.novamart.productData)
+  const productData = useSelector((state) => state.novamart.productData)
   const [nav, setNav] = useState(false)
 
   const handleNav = () => {
@@ -25,7 +28,7 @@ function Header() {
         <div className="flex gap-8">
           <div className="relative ">
             <MdShoppingCart className="text-3xl" />
-            <span className="absolute -top-2 -right-3 text-sm text-black font-semibold text-center bg-green-500  px-2 rounded-2xl">4</span>
+            <span className="absolute -top-2 -right-3 text-sm text-black font-semibold text-center bg-green-500  px-2 rounded-2xl">{productData.length}</span>
           </div>
           <div className="flex gap-2 items-center">
             <FaUserAstronaut />
