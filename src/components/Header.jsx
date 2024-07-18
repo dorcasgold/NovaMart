@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 function Header() {
-  // const productData = useSelector((state) => state.novamart.productData)
   const productData = useSelector((state) => state.novamart.productData)
   const [nav, setNav] = useState(false)
 
@@ -26,9 +25,11 @@ function Header() {
           <p className=" cursor-pointer">SHOP</p>
         </div>
         <div className="flex gap-8">
-          <div className="relative ">
-            <MdShoppingCart className="text-3xl" />
-            <span className="absolute -top-2 -right-3 text-sm text-black font-semibold text-center bg-green-500  px-2 rounded-2xl">{productData.length}</span>
+          <div className="relative cursor-pointer">
+            <Link to='cart'>
+              <MdShoppingCart className="text-3xl" />
+              <span className="absolute -top-2 -right-3 text-sm text-black font-semibold text-center bg-green-500  px-2 rounded-2xl">{productData.length}</span>
+            </Link>
           </div>
           <div className="flex gap-2 items-center">
             <FaUserAstronaut />
@@ -52,9 +53,11 @@ function Header() {
             <p className=" cursor-pointer">SHOP</p>
           </div>
           <div className="flex gap-5">
-            <div className="relative ">
-              <MdShoppingCart className="text-3xl" />
-              <span className="absolute -top-2 -right-3 text-sm text-center px-2 py-1 rounded-full">0</span>
+            <div className="relative cursor-pointer">
+              <Link to='cart'>
+                <MdShoppingCart className="text-3xl" />
+              </Link>
+              <span className="absolute -top-2 -right-3 text-sm text-center bg-green-500 px-2 py-1 rounded-full">{productData.length}</span>
             </div>
             <div className="flex gap-2 items-center">
               <FaUserAstronaut />

@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import { productsData } from './api/Api';
 import Product from './components/Product';
+import Cart from './pages/Cart';
 
 const Layout = () => {
   return (
@@ -29,7 +30,11 @@ const router = createBrowserRouter([
       {
         path: 'product/:id',
         element: <Product />
-      }
+      },
+      {
+        path: 'cart',
+        element: <Cart />
+      },
     ]
   }
 ])

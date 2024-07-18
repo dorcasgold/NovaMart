@@ -60,6 +60,10 @@ function Product() {
               <span className="new-price text-red font-medium">${details.price} USD</span>
               <span className="old-price line-through text-gray-400">${oldPrice} USD</span>
             </div>
+            <div className="flex gap-3 items-center">
+              <p className="font-bold">Category :</p>
+              <p className="bg-red text-white px-4 py-1 rounded-lg">{details.category}</p>
+            </div>
           </div>
           <div className="text-gray-500">
             <p>{details.description}</p>
