@@ -37,7 +37,7 @@ function Cart() {
           < div >
             <div className="max-w-screen-xl lg:mx-10 py-2 lg:py-20 flex flex-col gap-5 lg:flex-row">
               <CartItem productData={productData} />
-              <div className="lg:w-1/4 w-full border-gray-300 border-[1px] px-3 h-full py-2">
+              <div className="lg:w-1/4 w-full border-gray-300 lg:fixed right-8 border-[1px] px-3 h-1/3 py-2">
                 <div className="flex flex-col gap-8">
                   <div className="border-b-[1px] gap-4 border-b-gray-400 py-4">
                     <p className="text-center font-bold text-2xl -translate-y-4">Order Totals</p>

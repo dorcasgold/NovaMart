@@ -16,7 +16,7 @@ function CartItem({ productData }) {
       <div>
         {
           productData.map((item) => (
-            <div key={item._id} className="flex items-center justify-between lg:mt-6 border-gray-500 border-b">
+            <div key={item._id} className="flex flex-col lg:flex-row items-center justify-between lg:mt-6 border-gray-500 border-b py-4">
               <div className="flex items-center gap-2">
                 <MdDeleteForever
                   onClick={() => {
@@ -37,8 +37,8 @@ function CartItem({ productData }) {
                   </div>
                 )}
               </div>
-              <div className="flex lg:flex-row flex-col items-center justify-between gap-6 mt-6">
-                <h2 className="lg:w-52 w-60 font-semibold">{item.title}</h2>
+              <div className="flex flex-col lg:flex-row items-center justify-between gap-6 mt-6">
+                <h2 className="lg:w-52 w-60 font-semibold text-center">{item.title}</h2>
                 <p className="w-10">${item.price}</p>
                 <div className="w-52 flex items-center justify-between text-gray-500 gap-4 border p-3">
                   <p className="text-sm">Quantity</p>
@@ -116,7 +116,6 @@ function CartItem({ productData }) {
         pauseOnHover
         theme="dark"
         transition:Bounce>
-
       </ToastContainer>
     </div>
   );
