@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAPYk5NmVfDooV7jxcOV91PmQfbNxNF37M",
-  authDomain: "bazarapp-3b99c.firebaseapp.com",
-  projectId: "bazarapp-3b99c",
-  storageBucket: "bazarapp-3b99c.appspot.com",
-  messagingSenderId: "152850594987",
-  appId: "1:152850594987:web:1ffd8dd9021cda98c38bee"
+  apiKey: "AIzaSyCAXpWXL4yD44CAv3Jiy6PIE9Jj84wJUfc",
+  authDomain: "novamart-d1a5b.firebaseapp.com",
+  projectId: "novamart-d1a5b",
+  storageBucket: "novamart-d1a5b.appspot.com",
+  messagingSenderId: "661540730590",
+  appId: "1:661540730590:web:89c1448b7c9afb39c4b44f"
 };
 
 // Initialize Firebase

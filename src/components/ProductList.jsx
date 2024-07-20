@@ -22,7 +22,19 @@ function ProductList({ product }) {
   };
 
   // Check if product.images exists and has at least one image
-  const imageUrl = product.images && product.images.length > 1 ? product.images[1] : (product.images && product.images[0]);
+  // const imageUrl = product.images && product.images.length > 1 ? product.images[1] : (product.images && product.images[0]);
+  // const imageUrl = (product.images && product.images.length > 1)
+  //   ? product.images[1]
+  //   : (product.images && product.images.length > 0)
+  //     ? product.images[0]
+  //     : null;
+
+  // Use the second image if available, otherwise use the first image
+  const imageUrl = (product.images && product.images.length > 1)
+    ? product.images[1]
+    : (product.images && product.images.length > 0)
+      ? product.images[0]
+      : null;
 
   // Convert the rating to stars
   function getStars(rating) {

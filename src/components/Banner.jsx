@@ -19,10 +19,10 @@ function Banner() {
           <img src={data[3].img} alt="ImgFour" className='lg:w-screen h-1/2 lg:h-full object-cover' loading='priority' />
         </div>
         <div className=' -translate-y-[13rem] lg:-translate-y-0 absolute w-fit left-0 right-0 mx-auto flex gap-8 bottom-44'>
-          <div onClick={prevSlide} className='w-14 h-12 border-[1px] border-gray-700 flex items-center rounded-[3rem] justify-center hover:cursor-pointer bg-brown hover:bg-lbrown text-white active:bg-red-400 duration-300'>
+          <div onClick={prevSlide} className='w-14 h-12 border-[1px] border-gray-700 flex items-center rounded-sm justify-center hover:cursor-pointer bg-slate-900 hover:bg-slate-800 text-orange-500 active:bg-red-400 duration-300'>
             <HiArrowLeft />
           </div>
-          <div onClick={nextSlide} className='w-14 h-12 border-[1px] border-gray-700 flex items-center rounded-[3rem] justify-center hover:cursor-pointer bg-brown hover:bg-lbrown text-white active:bg-red-400 duration-300'>
+          <div onClick={nextSlide} className='w-14 h-12 border-[1px] border-gray-700 flex items-center rounded-sm justify-center hover:cursor-pointer bg-slate-900 hover:bg-slate-800 text-orange-500 active:bg-red-400 duration-300'>
             <HiArrowRight />
           </div>
         </div>

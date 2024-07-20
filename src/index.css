@@ -17,3 +17,7 @@ body {
 .black {
   background-color: #020116eb;
 }
+
+.box {
+  box-shadow: -1px 3px 6px 4px rgba(187, 184, 181, 1);
+}
