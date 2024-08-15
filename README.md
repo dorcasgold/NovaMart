@@ -1,8 +1,20 @@
-# React + Vite
+# Novamart - E-commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Novamart is a full-featured e-commerce platform designed to provide users with a seamless online shopping experience. The application includes secure user authentication, a comprehensive product catalog, a real-time shopping cart, and an admin panel for order management.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User Authentication:** Secure sign-in and sign-up with email/password and Google authentication.
+- **Product Catalog:** Browse, search, and filter products.
+- **Shopping Cart:** Real-time updates and secure checkout process.
+- **Admin Panel:** Manage orders and update product details.
+
+## Technologies Used
+
+- **Frontend:** ReactJS, Tailwind CSS
+- **Backend:** Node.js
+- **State Management:** Redux
+- **Authentication & Database:** Firebase
+- **Payments:** Stripe
+
+## Installation
